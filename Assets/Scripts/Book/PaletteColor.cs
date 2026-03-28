@@ -6,7 +6,7 @@ public class PaletteColor : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private SpriteFade eyeShadow;
     [SerializeField] private Color color;
-    [SerializeField] private EyeShadowBrush brush;
+    [SerializeField] private Brush brush;
     
     public void OnPointerClick(PointerEventData eventData)
     {

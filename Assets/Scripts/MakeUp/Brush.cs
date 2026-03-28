@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class EyeShadowBrush : InteractItem
+public class Brush : InteractItem
 {
     [SerializeField] private SpriteFade eyeShadow;
     [SerializeField] private SpriteRenderer spriteRenderer;

@@ -82,7 +82,7 @@ public class HandController : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
             return;
         }
 
-        if (faceArea.OverlapPoint(grabItem.transform.position + Vector3.up))
+        if (faceArea.OverlapPoint(grabItem.transform.position + new Vector3(0, 0.5f, 0)))
         {
             grabItem.Apply();
         }
