@@ -22,6 +22,7 @@ public abstract class InteractItem : MonoBehaviour, IPointerClickHandler
     public virtual void ReturnToDefault()
     {
         transform.DOMove(defaultPosition, 0.5f);
+        handController.ReturnHand();
     }
 
     public virtual void Apply()

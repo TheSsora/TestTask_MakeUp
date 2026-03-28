@@ -23,7 +23,7 @@ public class BookMark : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (activeMark.activeInHierarchy)
+        if (activeMark.activeInHierarchy || GameManager.instance.BookLocked)
             return;
         
         Switch();
